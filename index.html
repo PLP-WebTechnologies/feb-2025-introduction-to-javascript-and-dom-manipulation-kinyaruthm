@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="login-container">
+            <h2>Login</h2>
+            <form id="loginForm">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required />
+        
+              <label for="password">Password:</label>
+              <div class="password-wrapper">
+                <input type="password" id="password" name="password" required />
+                <span id="togglePassword"></span>
+              </div>
+        
+              <button type="submit">Login</button>
+            </form>
+            
+    <button type="button" onclick="toggleHint()">Forgot Password?</button>
+
+    <div id="hintBox" style="display: none; margin-top: 1rem;">
+    <p style="color: #555;">Hint: Your username is usually your email. Contact support if you forgot your password.</p>
+</div>
+
+            <p id="message"></p>
+          </div>
+
+<script src="script.js"></script>
+    </body>
+</html>
